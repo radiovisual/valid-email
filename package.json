@@ -6,15 +6,21 @@
   "author": "John Henry <john@iamjohnhenry.com>",
   "homepage": "https://github.com/johnhenry/valid-email",
   "scripts": {
-      "test": "expresso test/*"
+      "test": "xo && ava"
       },
     "devDependencies":{
-        "expresso":"0.9.x"
+      "ava": "^0.14.0",
+      "xo": "^0.14.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/johnhenry/valid-email.git"
   },
-  "main": "index",
-  "engines": { "node": "^0.8.x" }
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }
