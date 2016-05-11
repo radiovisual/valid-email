@@ -2,25 +2,37 @@
   "name": "valid-email",
   "version": "0.0.2",
   "description": "Test the validity of an email address",
-  "keywords": ["valid","email","test","validity","check"],
   "author": "John Henry <john@iamjohnhenry.com>",
   "homepage": "https://github.com/johnhenry/valid-email",
-  "scripts": {
-      "test": "xo && ava"
-      },
-    "devDependencies":{
-      "ava": "^0.14.0",
-      "xo": "^0.14.0"
-  },
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/johnhenry/valid-email.git"
   },
-  "main": "index.js",
   "files": [
     "index.js"
   ],
+  "scripts": {
+      "test": "xo && ava --verbose"
+  },
+  "keywords": [
+    "valid",
+    "email",
+    "test",
+    "validity",
+    "check"
+  ],
   "engines": {
     "node": ">=0.10.0"
+  },
+  "devDependencies":{
+    "ava": "^0.14.0",
+    "xo": "^0.14.0"
+  },
+  "xo" : {
+    "rules": {
+      "no-useless-escape": 0
+    }
   }
 }

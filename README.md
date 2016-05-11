@@ -1,14 +1,30 @@
-#valid-email
+# valid-email
 
-##Validate Email Addresses w/o pure regular expressions.
-Regular expression validation is often useful, but also often inaccurate.
-Sometimes it's just better to do it manually
+> Validate Email Addresses without pure regular expressions.
+
+Regular expression validation is often useful, but often inaccurate. 
+Sometimes it's just better to do it manually.
 
 
+## Install
 
-## Example
+```
+$ npm install --save valid-email
+```
+
+
+## Usage
 
 ```js
-    console.log(require('valid-email')('john@iamjohnhenry.com'))//#true
-    console.log(require('valid-email')('iamjohnhenry.com'))//#false
+const validEmail = require('valid-email');
+
+validEmail('john@iamjohnhenry.com');
+//=> true
+
+validEmail('iamjohnhenry.com');
+//=> false
 ```
+
+## License 
+
+MIT
